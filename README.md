@@ -1,12 +1,11 @@
-This is a sample Web Application to use during Continuous Integration demos.
+# testing
+name: testing
+on: push
 
-# Build Instruction
-
-```
-mvn3 clean package
-```
-
-# Deploy instruction
-
-Deploy ```target/WebApp.war``` on Tomcat
+jobs:
+  Job-github-actions-running-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: echo "STARTED GitHub Actions workflow "
  
